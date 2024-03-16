@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import  SparklesPreview from "./components/pages/sparklesPreview.tsx";
+
+import AboutMeHeding from "./components/pages/aboutme/aboutme.jsx";
+import {GoogleGeminiEffectDemo} from "./components/pages/parralx.tsx"; 
+
+import {StickyScrollRevealDemo} from "./components/pages/stratergy.tsx"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SparklesPreview/>
+      <AboutMeHeding/>
+
+      <GoogleGeminiEffectDemo/>
+      <AboutMeHeding/>
+   
+
+      {/* <StickyScrollRevealDemo/> */}
+     
+
     </div>
   );
 }
