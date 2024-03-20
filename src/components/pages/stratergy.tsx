@@ -51,10 +51,13 @@ const content = [
     ),
   },
 ];
-export function StickyScrollRevealDemo() {
+const  StickyScrollRevealDemo =() =>{
   return (
-    <div className="p-10">
+    <div className="p-0">
       <StickyScroll content={content} />
     </div>
   );
 }
+
+
+export default StickyScrollRevealDemo
