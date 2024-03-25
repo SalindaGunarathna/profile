@@ -1,29 +1,32 @@
 // import logo from './logo.svg';
 import './App.css';
 
-import  SparklesPreview from "./components/pages/sparklesPreview.tsx";
+import SparklesPreview from "./components/pages/sparklesPreview.tsx";
 
 import AboutMeHeding from "./components/pages/aboutme/aboutme.jsx";
-import {GoogleGeminiEffectDemo} from "./components/pages/parralx.tsx"; 
+import { GoogleGeminiEffectDemo } from "./components/pages/parralx.tsx";
 
 import StickyScrollRevealDemo from "./components/pages/stratergy.tsx";
 
-import {MacbookScrollDemo} from "./components/pages/macLapIcon.jsx"
+import { BackgroundGradientDemo } from "./components/pages/preojectCotogary/projectCatogary.tsx";
+
+import { ThreeDCardDemo } from "./components/pages/projects/card.jsx";
 
 function App() {
   return (
     <div className="App">
-      <SparklesPreview/>
-      <AboutMeHeding/>
+      <SparklesPreview />
+      <AboutMeHeding />
 
-      <GoogleGeminiEffectDemo/>
-     
-   
+      <GoogleGeminiEffectDemo />
 
-       <StickyScrollRevealDemo/> 
+      <StickyScrollRevealDemo />
 
-       {/* <MacbookScrollDemo/> */}
-     
+      <BackgroundGradientDemo />
+
+
+      <ThreeDCardDemo />
+
 
     </div>
   );
