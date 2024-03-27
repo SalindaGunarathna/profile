@@ -1,0 +1,6 @@
+.scroll-animation {
+    /* Adjust the width and height as needed */
+    width: 50%;
+    max-width: 20rem; /* Set the maximum width */
+    height: 50px;
+  }
