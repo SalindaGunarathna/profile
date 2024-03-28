@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container } from './styles.ts'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
@@ -20,19 +20,19 @@ export function Header() {
   return (
     <Container className="header-fixed">
       <Router>
-        <HashLink smooth to="#home" className="logo">
+        <HashLink smooth to="#home" className="logo text-white" >
           <span>{"<Salinda "}</span>
           <span>{" Gunarathna/>"}</span>
         </HashLink>
 
-        <input
+        {/* <input
           onChange={toggleTheme}
           className="container_toggle"
           type="checkbox"
           id="switch"
           name="mode"
         />
-        <label htmlFor="switch">Toggle</label>
+        <label htmlFor="switch">Toggle</label> */}
 
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
@@ -41,13 +41,13 @@ export function Header() {
           <NavHashLink smooth to="#about" onClick={closeMenu}>
             About me
           </NavHashLink>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
+          <NavHashLink smooth to="#projects" onClick={closeMenu}>
             Project
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a  className="button">
+          <a  className="button bg-green-500 hover:bg-green-400 rounded-lg text-white" href="https://drive.google.com/file/d/1g7j8vN6m8ZoVn6wU0ZiRz6gDyfRJXVYH/view?usp=sharing">
             CV
           </a>
         </nav>

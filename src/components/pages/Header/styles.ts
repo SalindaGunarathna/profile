@@ -5,9 +5,10 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 10rem;
+  padding: 1rem 10rem;
+  margin: 5 auto;
   
-  background-color: #21212150;
+  background-color: ;
   
   backdrop-filter: blur(6px);
 
@@ -30,11 +31,11 @@ export const Container = styled.header`
       transition: filter 0.25s;
 
       &.button{
-        padding: 0.6rem 5rem;
+        padding: 0.6rem 3rem;
       }
 
       &:hover{
-        filter: brightness(0.6);
+        filter: brightness(0.5);
       }
     }
 

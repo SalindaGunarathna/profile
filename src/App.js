@@ -11,13 +11,17 @@ import StickyScrollRevealDemo from "./components/pages/stratergy.tsx";
 import { BackgroundGradientDemo } from "./components/pages/preojectCotogary/projectCatogary.tsx";
 import { BackgroundGradientDemo2 } from "./components/pages/projects/projectCatogary.tsx";
 
+import {Header} from "./components/pages/Header/Header.tsx";
 
 
+//import Navbar from "./components/pages/Header/navBar.tsx";
 
 
 function App() {
   return (
     <div className="App">
+
+      <Header/>
       <SparklesPreview />   
       <AboutMeHeding />
 

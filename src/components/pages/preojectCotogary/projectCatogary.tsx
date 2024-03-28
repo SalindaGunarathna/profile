@@ -5,7 +5,7 @@ import { IconAppWindow } from "@tabler/icons-react";
 
 export function BackgroundGradientDemo() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+        <div id="projects" className="flex flex-col items-center justify-center min-h-screen bg-black">
             <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center">
                 <div className="max-w-xs w-full md:w-auto p-4 sm:p-6">
                     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-white dark:bg-zinc-900">
