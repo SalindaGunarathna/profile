@@ -13,6 +13,9 @@ import { Projects } from "./components/projects/projects.tsx";
 
 import {Header} from "./components/Header/Header.tsx";
 
+import EmailForm from "./components/contact/cantact.tsx"
+ 
+import  Footer from "./components/Footer/footer.jsx"
 
 //import Navbar from "./components/pages/Header/navBar.tsx";
 
@@ -28,12 +31,14 @@ function App() {
       <ProjectCatogary />
       <StickyScrollRevealDemo />
       <Projects />
+      <EmailForm/>
+      < Footer/>
 
 
    
 
 
-      {/* <ThreeDCardDemo /> */}
+      
 
 
     </div>

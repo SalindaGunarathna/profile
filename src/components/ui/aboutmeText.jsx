@@ -12,15 +12,28 @@ const ShuffleHero = () => {
   return (
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
-        <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-large ">
-        Hey there! I'm Salinda, a tech enthusiast dedicated to crafting cutting-edge digital solutions.
+        <span className="block mb-4 text-xs md:text-base text-indigo-500 font-large text-center text-justify text-white">
+          Greetings! I'm Salinda Lakshan Gunarathna, a passionate tech enthusiast committed
+          to shaping innovative digital solutions. Currently pursuing my undergraduate
+          degree in Computer Engineering at the University of Ruhuna, I'm in my third
+          year of study. As I embark on this journey, I'm eager to delve into the
+          realms of software engineering, with a keen interest in integrating it
+          with DevOps practices. My goal is to evolve into a proficient DevOps engineer,
+          blending my technical acumen with continuous learning and hands-on experience.
         </span>
 
-        <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-        With a focus on web development, I specialize in creating unique online experiences using the powerful MERN Stack.
-         From sleek interfaces to robust back-end systems, I've got you covered with Node.js, Express, and SpringBoot
+        <span className="block mb-4 text-xs md:text-base text-indigo-500 font-large text-center text-justify text-white">
+          With extensive experience in various technologies, I specialize in
+          web application development using the MERN Stack. My focus lies in backend
+          development, where I contribute expertise in OOP concepts and design patterns.
+          Additionally, I'have basic knowledge in DevOps tooling such as Docker, Kubernetes, AWS,
+          Terraform, Jenkins, and Ansible.
+
+          Beyond web applications, I also have expertise in mobile application development
+          using Flutter and Firebase. Furthermore, I've developed machine learning models in
+          Python, integrating them with various algorithms for diverse applications.
         </span>
-        
+
       </div>
       <ShuffleGrid />
     </section>
@@ -48,52 +61,52 @@ const squareData = [
   {
     id: 1,
     // express
-    src:"https://markovate.com/wp-content/uploads/2022/06/Is-Express.js-Framework-An-Ideal-Choice-For-Developing-Enterprise-Applications_@2x-1280x960.png.webp"
+    src: "https://markovate.com/wp-content/uploads/2022/06/Is-Express.js-Framework-An-Ideal-Choice-For-Developing-Enterprise-Applications_@2x-1280x960.png.webp"
     //src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   },
   {
     id: 2, // react
-    src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezGYJz5w9yMj5nuFzipYIjvzNTEODKE2PRw&usqp=CAU"
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezGYJz5w9yMj5nuFzipYIjvzNTEODKE2PRw&usqp=CAU"
     //src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
     id: 3,// flutter
-    src:"https://png.pngtree.com/png-vector/20220812/ourmid/pngtree-flutter-logo-icon-png-image_6108134.png"
+    src: "https://png.pngtree.com/png-vector/20220812/ourmid/pngtree-flutter-logo-icon-png-image_6108134.png"
     //src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
     id: 4,// mongodb
-    src:"https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Photo.png"
+    src: "https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Photo.png"
     //src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
     id: 5,// html and css
-    src:"https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"
+    src: "https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"
     //src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
   },
   {
     id: 6, // springboot
-    src:"https://miro.medium.com/v2/resize:fit:1000/1*XtjiQD35ja0DcA9H-JuM-g.png"
-   // src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: "https://miro.medium.com/v2/resize:fit:1000/1*XtjiQD35ja0DcA9H-JuM-g.png"
+    // src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   },
   {
     id: 7,// docker
-    src:"https://miro.medium.com/v2/resize:fit:700/0*lpa1F-uSiw0SKbFu.jpeg"
+    src: "https://miro.medium.com/v2/resize:fit:700/0*lpa1F-uSiw0SKbFu.jpeg"
     //src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   },
   {
     id: 8, // kubunaties
-    src:"https://l450v.alamy.com/450v/2jj4da9/kubernetes-logo-black-background-2jj4da9.jpg"
+    src: "https://l450v.alamy.com/450v/2jj4da9/kubernetes-logo-black-background-2jj4da9.jpg"
     //src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   },
   {
     id: 9,// firebase
-    src:"https://ih1.redbubble.net/image.1853612724.0607/raf,360x360,075,t,fafafa:ca443f4786.jpg"
-   // src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    src: "https://ih1.redbubble.net/image.1853612724.0607/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+    // src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   },
   {
     id: 10,// mysql
-    src:"https://www.webasha.com/uploads/course/images/65193baacd09d1696152490.sql-mysql_training.jpg"
+    src: "https://www.webasha.com/uploads/course/images/65193baacd09d1696152490.sql-mysql_training.jpg"
     //src: "https://images.unsplash.com/photo-1610768764270-790fbec18178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
@@ -116,7 +129,7 @@ const squareData = [
   {
     id: 15,//javascript
     //src:"https://www.clipartmax.com/png/small/89-894960_js-discord-bot-logo-node-js-and-react-js.png"
-    src:"https://friconix.com/png/fi-cnsuxx-nodejs.png"  //somthay good
+    src: "https://friconix.com/png/fi-cnsuxx-nodejs.png"  //somthay good
     //src: "https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80",
   },
   {
