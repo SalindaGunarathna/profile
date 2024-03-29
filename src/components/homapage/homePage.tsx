@@ -3,7 +3,12 @@ import SparklesCore from "../ui/sparkles.tsx";
 import ScrollAnimation from "react-animate-on-scroll";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect.tsx";
 
-
+import {
+  IconBrandLinkedin,
+  IconBrandFacebook,
+  IconBrandWhatsapp,
+  IconBrandGithub,
+} from "@tabler/icons-react";
 import TypewriterEffectSmooth2 from "../styleItem/typewriterEffectSmooth.jsx"
 
 // import Illustration from "../../assets/profile-pic.png";
@@ -31,6 +36,15 @@ const whatsapp = require('../../assets/whatsapp.svg')
 const HomaPage = () => {
 
 
+  const BottomGradient = () => {
+    return (
+      <>
+        <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+        <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+      </>
+    );
+  };
+  
   const phrases = [
     { text: "i" },
     { text: "'work with" },
@@ -75,13 +89,18 @@ const HomaPage = () => {
             
             <div className="mr-left-10 horizontal-center flex flex-column">
 
-              <a className="size-10"
-                href="https://www.linkedin.com/in/salinda-gunarathna-a036a4263"
-                target="_blank"
-                rel="noreferrer"
+            <a href='https://github.com/SalindaGunarathna' target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+              <button
+                className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full md:w-auto text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                type="submit"
               >
-                <img src={Linkedin} alt="Linkedin" />
-              </a>
+                <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                  GitHub
+                </span>
+                <BottomGradient />
+              </button>
+            </a>
               <a className="size-10"
                 href="https://github.com/SalindaGunarathna"
                 target="_blank"
