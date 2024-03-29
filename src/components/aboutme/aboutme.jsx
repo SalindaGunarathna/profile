@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SparklesCore from "../../ui/sparkles.tsx";
+import SparklesCore from "../ui/sparkles.tsx";
 import ScrollAnimation from "react-animate-on-scroll";
 
 // import node from "../../../assets/facebook2.jpg";
@@ -17,14 +17,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 // import boostrapIcon from "../../../assets/bootstrap-icon.svg";
 
 
-
-import ShuffleHero from "../../../components/ui/aboutmeText.jsx";
+import ShuffleHero from "../../components/ui/aboutmeText.jsx";
 
 
 const AboutMeHeding = () => {
+
+    
     return (
 
-        <div className="flex-colunm">
+        <div id="aboutme" className="flex-colunm">
 
 
             <div className=" h-1/4 h-[40rem] w-full bg-black flex flex-col items-center mr-top-10 overflow-hidden ">
@@ -48,11 +49,6 @@ const AboutMeHeding = () => {
                         particleColor="#FFFFFF"
                     />
 
-                   
-
-
-
-
                     {/* Radial Gradient to prevent sharp edges */}
                     <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]">
 
@@ -60,17 +56,8 @@ const AboutMeHeding = () => {
 
 
                     </div>
-
-
-
-
-
-
-
                 </div>
                 <ShuffleHero />
-
-
 
             </div>
 

@@ -1,16 +1,20 @@
 "use client";
 import React from "react";
-import { BackgroundGradient } from "../../ui/background-gradient.tsx";
+import { BackgroundGradient } from "../ui/background-gradient.tsx";
 import { IconAppWindow } from "@tabler/icons-react";
 
-export function BackgroundGradientDemo() {
+const webdev = require("../../assets/webdev.png");
+const mobiledev =require("../../assets/mobiledev.png")
+const devops =require("../../assets/devops.png")
+
+export function ProjectCatogary() {
     return (
-        <div id="projects" className="flex flex-col items-center justify-center min-h-screen bg-black">
+        <div  className="flex flex-col items-center justify-center min-h-screen bg-black">
             <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center">
                 <div className="max-w-xs w-full md:w-auto p-4 sm:p-6">
                     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-white dark:bg-zinc-900">
                         <img
-                            src="https://www.rohitchauhan.co.in/images/home-right.png"
+                            src={mobiledev}
                             alt="jordans"
                             className="object-contain w-full h-auto"
                         />
@@ -34,7 +38,7 @@ export function BackgroundGradientDemo() {
                 <div className="max-w-xs w-full md:w-auto p-4 sm:p-6">
                     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-white dark:bg-zinc-900">
                         <img
-                            src="https://www.rohitchauhan.co.in/images/home-right.png"
+                            src={webdev}
                             alt="jordans"
                             className="object-contain w-full h-auto"
                         />
@@ -58,7 +62,7 @@ export function BackgroundGradientDemo() {
                 <div className="max-w-xs w-full md:w-auto p-4 sm:p-6">
                     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-white dark:bg-zinc-900">
                         <img
-                            src="https://www.rohitchauhan.co.in/images/home-right.png"
+                            src={devops}
                             alt="jordans"
                             className="object-contain w-full h-auto"
                         />

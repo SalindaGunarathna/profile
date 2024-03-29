@@ -3,7 +3,7 @@ import { useScroll, useTransform } from "framer-motion";
 import React from "react";
 import { GoogleGeminiEffect } from "../ui/googleGeminiEffect.tsx";
 
-export function GoogleGeminiEffectDemo() {
+export function LoagingProgress() {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

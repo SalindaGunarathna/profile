@@ -1,22 +1,22 @@
 "use client";
 import React from "react";
-import { BackgroundGradient } from "../../ui/background-gradient.tsx";
+import { BackgroundGradient } from "../ui/background-gradient.tsx";
 import { IconAppWindow } from "@tabler/icons-react";
-import { CardBody, CardContainer, CardItem } from "../../ui/3d-card.tsx";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card.tsx";
 
-const Image = require("../../../assets/profile-pic.png");
-const externalLink = require("../../../assets/external-link.svg");
+const Image = require("../../assets/profile-pic.png");
+const externalLink = require("../../assets/external-link.svg");
 
-const webAppImage = require("../../../assets/GymWebApp.png");
-const cameramenApp = require("../../../assets/cameramenApp.png");
-const carSaleProject = require("../../../assets/carSaleProject.jpg");
-const cwpfAplication = require("../../../assets/wpfAplication-01.png");
-const cwpfAplication2 = require("../../../assets/WPFaplication.svg");
-const MLproject = require("../../../assets/MLproject.jpg");
+const webAppImage = require("../../assets/GymWebApp.png");
+const cameramenApp = require("../../assets/cameramenApp.png");
+const carSaleProject = require("../../assets/carSaleProject.jpg");
+const cwpfAplication = require("../../assets/wpfAplication-01.png");
+const cwpfAplication2 = require("../../assets/WPFaplication.svg");
+const MLproject = require("../../assets/MLproject.jpg");
 
-export function BackgroundGradientDemo2() {
+export function Projects() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+        <div  id ="projects" className="flex flex-col items-center justify-center min-h-screen bg-black">
 
             <div className="flex flex-wrap justify-center gap-10 md:gap-5 items-center">
 
