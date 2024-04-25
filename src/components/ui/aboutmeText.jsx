@@ -10,33 +10,18 @@ const postman = require("../../assets/facebook2.png");
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
-      <div>
-        <span className="block mb-4 text-xs md:text-base text-indigo-500 font-large text-center text-justify text-white">
-          Greetings! I'm Salinda Lakshan Gunarathna, a passionate tech enthusiast committed
-          to shaping innovative digital solutions. Currently pursuing my undergraduate
-          degree in Computer Engineering at the University of Ruhuna, I'm in my third
-          year of study. As I embark on this journey, I'm eager to delve into the
-          realms of software engineering, with a keen interest in integrating it
-          with DevOps practices. My goal is to evolve into a proficient DevOps engineer,
-          blending my technical acumen with continuous learning and hands-on experience.
-        </span>
-
-        <span className="block mb-4 text-xs md:text-base text-indigo-500 font-large text-center text-justify text-white">
-          With extensive experience in various technologies, I specialize in
-          web application development using the MERN Stack. My focus lies in backend
-          development, where I contribute expertise in OOP concepts and design patterns.
-          Additionally, I'have basic knowledge in DevOps tooling such as Docker, Kubernetes, AWS,
-          Terraform, Jenkins, and Ansible.
-
-          Beyond web applications, I also have expertise in mobile application development
-          using Flutter and Firebase. Furthermore, I've developed machine learning models in
-          Python, integrating them with various algorithms for diverse applications.
-        </span>
-
-      </div>
-      <ShuffleGrid />
-    </section>
+    <section className="w-full px-10 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
+    <div>
+      <span className="block mb-6 text-lg md:text-xl text-indigo-500 font-serif text-center text-justify text-white">
+        I am Salina Gunarathna, 3rd-year Computer Engineering undergraduate at the University 
+        of Ruhuna, seeking a dynamic 6-month internship in Software Engineering
+        seamlessly integrated with DevOps practices. Passionate about crafting innovative
+        software solutions with a focus on backend development, adept at navigating 
+        diverse technology stacks.
+      </span>
+    </div>
+    <ShuffleGrid />
+  </section>
   );
 };
 
@@ -76,7 +61,7 @@ const squareData = [
   },
   {
     id: 4,// mongodb
-    src: "https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Photo.png"
+    //src: "https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Photo.png"
     //src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
@@ -119,7 +104,7 @@ const squareData = [
 
   {
     id: 13,
-    src: "https://upload.wikimedia.org/wikipedia/en/5/5a/Proteus_Design_Suite_Atom_Logo.png",
+   // src: "https://upload.wikimedia.org/wikipedia/en/5/5a/Proteus_Design_Suite_Atom_Logo.png",
   },
   {
     id: 14,// JAVA
@@ -129,7 +114,7 @@ const squareData = [
   {
     id: 15,//javascript
     //src:"https://www.clipartmax.com/png/small/89-894960_js-discord-bot-logo-node-js-and-react-js.png"
-    src: "https://friconix.com/png/fi-cnsuxx-nodejs.png"  //somthay good
+   //src: "https://friconix.com/png/fi-cnsuxx-nodejs.png"  //somthay good
     //src: "https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80",
   },
   {
