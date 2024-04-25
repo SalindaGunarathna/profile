@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmayapp=self.webpackChunkmayapp||[]).push([[9482],{9482:(a,e,n)=>{async function p(a){let e=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{SquareDrawer:p}=await n.e(5474).then(n.bind(n,5474));await a.addShape(["edge","square"],new p,e)}n.d(e,{loadSquareShape:()=>p})}}]);
+//# sourceMappingURL=9482.523e784a.chunk.js.map
