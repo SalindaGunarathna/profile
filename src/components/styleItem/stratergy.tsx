@@ -15,7 +15,7 @@ const Cicd =require("../../assets/cicd.png")
 
 const content = [
   {
-    title: "project management",
+    title: "Project management",
     description:
       "Work together in real time with our team, clients, and stakeholders.Jira project management tool helps us stay organized and on top of our workflow and increase productivity.",
     content: (
@@ -47,7 +47,7 @@ const content = [
     ),
   },
   {
-    title: "follow the agile process",
+    title: "Follow the agile process",
     description:
       "Work together in real time with our team, clients, and stakeholders. Share our knowledge with team members and process client requirements. Manage workflow by taking Scrum meetings to ensure all group members are in the correct process.",
     content: (
@@ -63,9 +63,9 @@ const content = [
     ),
   },
   {
-    title: "getting atart to follow CI/CD pipeline", 
+    title: "Getting start to follow CI/CD pipeline", 
     description:
-      "I'm updating my knowledge to align with the CI/CD pipeline development process. I've already completed the development phase and am now transitioning to testing and deployment. I'm learning DevOps concepts to follow the CI/CD pipeline efficiently.",
+      "I'm updating my knowledge to align with the CI/CD pipeline development process. I've already completed the development phase and I am now transitioning to testing and deployment. I'm learning DevOps concepts to follow the CI/CD pipeline efficiently.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
        <img
@@ -83,7 +83,7 @@ const content = [
 const StickyScrollRevealDemo = () => {
 
   const phrases = [
-    { text: "My Projects are integrating with     " },
+    { text: "My projects are integrating with     " },
     { text: "project" },
 
   ];

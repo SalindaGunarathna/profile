@@ -30,7 +30,7 @@ const AboutMeHeding = () => {
 
             <div className=" h-1/4 h-[40rem] w-full bg-black flex flex-col items-center mr-top-10 overflow-hidden ">
                 <h1 className="md:text-5xl text-3xl lg:text-5xl font-bold text-center text-white ">
-                    ABout me
+                About me 
                 </h1>
                 <div className="w-[40rem] h-20 relative">
                     {/* Gradients */}

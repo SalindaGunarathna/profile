@@ -13,10 +13,10 @@ const ShuffleHero = () => {
     <section className="w-full px-10 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
     <div>
       <span className="block mb-6 text-lg md:text-xl text-indigo-500 font-serif text-center text-justify text-white">
-        I am Salina Gunarathna, 3rd-year Computer Engineering undergraduate at the University 
-        of Ruhuna, seeking a dynamic 6-month internship in Software Engineering
+        I am Salinda Gunarathna, 3rd-year Computer Engineering undergraduate at Faculty of Engineering University of Ruhuna ,
+         seeking a dynamic 6-months internship in Software Engineering
         seamlessly integrated with DevOps practices. Passionate about crafting innovative
-        software solutions with a focus on backend development, adept at navigating 
+        software solutions with a focus on back-end development, adept at navigating 
         diverse technology stacks.
       </span>
     </div>

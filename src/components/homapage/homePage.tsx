@@ -9,8 +9,8 @@ const Illustration = require('../../assets/profile-pic.png');
 
 const HomaPage = () => {
   const words = [
-    { text: "i" },
-    { text: "'m" },
+    { text: "I" ,className: "text-blue-100 dark:text-blue-500" },
+    { text: "'m",className: "text-blue-100 dark:text-blue-500" },
     { text: "Salinda Gunarathna         .", className: "text-blue-500 dark:text-blue-500" },
   ];
 
@@ -37,7 +37,7 @@ const HomaPage = () => {
               <TypewriterEffectSmooth words={words} />
             </h1>
             <p className="md:text-1xl text-1xl mr-left-3 lg:text-2xl font-bold text-left text-white relative z-20" >
-              Computer Engineering undergraduate
+              Computer Engineering Undergraduate
             </p>
             <div className="flex items-center space-x-4">
               {/* <a href='https://github.com/SalindaGunarathna' target="_blank" rel="noopener noreferrer"><IconBrandGithub className="text-2xl text-white hover:text-blue-500" /></a>

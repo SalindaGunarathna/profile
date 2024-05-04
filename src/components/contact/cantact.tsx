@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 
+import { useEffect } from 'react';
+
 import SparklesCore from "../ui/sparkles.tsx";
 
 
@@ -21,6 +23,24 @@ const EmailForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDarkMode(prefersDarkScheme.matches);
+
+    const handleChange = (e) => {
+      setIsDarkMode(e.matches);
+    };
+
+    prefersDarkScheme.addEventListener("change", handleChange);
+
+    return () => {
+      prefersDarkScheme.removeEventListener("change", handleChange);
+    };
+  }, []);
+
 
 
 
@@ -57,9 +77,12 @@ const EmailForm = () => {
 
   return (
 
-    <div  id ="contact" className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+    <div  id ="contact" className={`h-[50rem] ${isDarkMode ? 'dark:bg-black' : 'bg-black'} w-full   dark:bg-dot-black/[0.2] bg-dot-white/[0.2] relative flex items-center justify-center`}>
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className={`absolute pointer-events-none inset-0 flex items-center
+        ${isDarkMode ? 'bg-black' : 'bg-black'}
+       justify-center bg-black bg-black
+        [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]`}></div>
 
 
 
@@ -87,36 +110,38 @@ const EmailForm = () => {
 
           {/* Radial Gradient to prevent sharp edges */}
         </div>
-        <p className="text-neutral-600 text-sm max-w-sm mt dark:text-neutral-300">
+        <p className="text-neutral-600 text-sm max-w-sm mt dark:text-neutral-300 text-white">
           send me an email and I will get back to you as soon as possible
         </p>
 
         
 
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form className="my-8 text-white" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
 
           </div>
-          <LabelInputContainer className="mb-4">
-            <Label htmlFor="email">Email Address</Label>
-            <Input id="email" placeholder="projectmayhem@fc.com" type="email"
+          <LabelInputContainer className="mb-4 ">
+            <p>Email address</p>
+            
+            <Input id="email" placeholder="Enter your email" type="email"
+             className='bg-gray-800 dark:bg-zinc-900 text-white rounded-md p-4'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
-            <Label htmlFor="password">Your Name</Label>
-            <Input id="password" placeholder="your name" type="name"
-
+            <p> Your Name</p>
+            <Input id="password" placeholder="Enter your name" type="name"
+             className='bg-gray-800 dark:bg-zinc-900 text-white rounded-md p-4'
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-8">
-            <Label htmlFor="twitterpassword">Your massage</Label>
+            <Label htmlFor="twitterpassword">Your message</Label>
             <textarea
-              placeholder="write your massage"
-              className='bg-black dark:bg-zinc-900 text-white h-40 rounded-md p-4'
+              placeholder="write your message"
+              className='bg-gray-800 dark:bg-zinc-900 text-white h-40 rounded-md p-4'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             >
@@ -258,7 +283,7 @@ const LabelInputContainer = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+    <div className={cn("flex flex-col space-y-2 w-full text-white", className)}>
       {children}
     </div>
   );
