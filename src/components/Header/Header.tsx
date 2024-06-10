@@ -48,7 +48,7 @@ export function Header() {
             Contact
           </NavHashLink>
           <a  className="button bg-blue-600 hover:bg-black-400 rounded-lg text-white"
-           href="https://drive.google.com/file/d/1GM3_nhxdscv8AaNre5V67N4JpePZivoE/view?usp=sharing">
+           href="https://drive.google.com/file/d/1034u4_XVwlv_9i7LNfJdhlRdmwEFlEjj/view?usp=sharing">
             CV
           </a>
         </nav>
